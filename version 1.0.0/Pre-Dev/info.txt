@@ -1,0 +1,42 @@
+The application is focused on the Client side at this stage.
+
+            Features include:
+1.Progress bar.
+2.Financial Calculator (simple interest and compound interest).
+3.Colour change on some instances.
+4.Banners to indicate entry on certain stages.
+
+The application should be able to enable the user to create an account
+
+                    Account Creation includes:
+
+1.Take full name of the user - string
+2.Take email address of the user - string
+3.Take phone number of the user - string
+4.Take employed - bool
+
+                    Account types include : 
+1.Savings account.
+2.Fixed account.
+3.Current account.
+
+            Account Management : (Account_Management.h)
+
+1.Login with a Password.
+2.Access services associated with the account (withdrawal,Deposit,Balance)
+3.Delete Account.
+4.Change Account Password. (inherits from the security.h)
+5.Create Account.
+
+            Security.h contains : 
+1.Algorithm to hash user credentials and store in a file.
+2.Retrieve the password and verify the password against the stored.
+3.Provide for Account Recovery.
+4.Lock account when password fails 3 times.
+5.Security questions to unlock a locked account.
+
+            log.h contains
+1.Time for logging in
+2.Rejected password (showing the username and password)
+3.Time to log out
+4.Saving details in a file : "log.txt".
